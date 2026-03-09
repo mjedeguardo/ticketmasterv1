@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concierto Top</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar" id="home">
+            <div class="logo">
+            <i class="fas fa-cube"></i>
+            <span>Conciertos Top</span>
+        </div>
+        <!--menu-->
+        <div class="menu">
+        <a href="#home"><i class="fas fa-home"></i> Inicio</a>
+        <a href="#my-events"><i class="fas fa-calendar"></i> Eventos</a>
+        <a href="#"><i class="fas fa-user"></i> Inicio</a>
+        </div>
+      
+    </header>
+<!--Primer titulo-->
+    <section class="discover">
+        <h2>Descrubre los mejores conciertos</h2>
+
+        <div class="filters">
+            <div class="search-box">
+                <input id="searchInput" type="text" placeholder="Buscador de eventos...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+          <div class="categories">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="rock">Rock</button>
+          <button data-filter="cumbia">Cumbia</button>
+          <button data-filter="reggaeton">Reggaetón</button>
+          <button data-filter="pop">Pop</button>
+        </div>
+        </div>
+    </section>
+<!--galeria-->
+    <section class="gallery" aria-label="Galería de conciertos">
+          <div class="gallery-track">
+            <article class="gallery-slide" id="g1">
+                <img src="https://cdn-az.allevents.in/events1/banners/e7af69863c048ff8b147e91fed8e374d0d5d3ff1f288ca3d7d350e3bdbf39eb6-rimg-w1024-h512-dc161516-gmir?v=1770806697" alt="Sin Bandera - Escenas Tour" loading="lazy">
+                
+       <div class="gallery-overlay">
+        <div class="gallery-badge">
+          <span class="dot"></span> MÚSICA / Presencial
+        </div>
+        <h3>Sin Bandera - Escenas Tour</h3>
+        <p>28 de marzo 2026 · Lima</p>
+        <a class="gallery-cta" href="#">VER MÁS</a>
+        </div>
+
+          <a class="gallery-nav next" href="#g2" aria-label="Siguiente">›</a>
+        </article>
+         <article class="gallery-slide" id="g2">
+      <img 
+        src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1800&q=80" 
+        alt="Rock Night Festival"
+        loading="lazy">
+        <!--2-->
+
+      <div class="gallery-overlay">
+        <div class="gallery-badge">
+          <span class="dot"></span> MÚSICA / Presencial
+        </div>
+        <h3>Festival del rock</h3>
+        <p>12 de abril 2026 · Lima</p>
+        <a class="gallery-cta" href="#">VER MÁS</a>
+      </div>
+
+      <!-- ANTERIOR Y SIGUIENTE -->
+      <a class="gallery-nav prev" href="#g1" aria-label="Anterior">‹</a>
+      <a class="gallery-nav next" href="#g3" aria-label="Siguiente">›</a>
+    </article>
+
+    <article class="gallery-slide" id="g3">
+        <img src="https://yt3.googleusercontent.com/SUuc8CuFu61FqbJkSs-6SYhcAoR7ueJH3GlJYYg5uxePaS_zFfsYqz3SzfoPU-jcmTF6JG0P3vHlUQ=w2880-h1200-p-l90-rj" 
+        alt="Dread Mar" loading="lazy">
+        <div class="gallery-overlay">
+        <div class="gallery-badge">
+          <span class="dot"></span> MÚSICA / Presencial
+        </div>
+        <h3>Dread Mar I</h3>
+        <p>30 de mayo 2026 · Lima</p>
+        <a class="gallery-cta" href="#">VER MÁS</a>
+      </div>
+
+      <!-- ANTERIOR Y REGRESO AL INICIO -->
+      <a class="gallery-nav prev" href="#g2" aria-label="Anterior">‹</a>
+      <a class="gallery-nav next" href="#g1" aria-label="Volver al inicio">›</a>
+      </article>
+        </div>
+    <nav class="gallery-dots">
+    <a href="#g1"></a>
+    <a href="#g2"></a>
+    <a href="#g3"></a>
+  </nav>
+    </section>
+  <!--Card-->
+  <section class="cards" aria-label="Listado de conciertos">
+    <div class="cards-grid">
+      <article class="card" data-id="ev1" data-category="rock" data-artist="Green Day"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkI_xjz9x74Cv7gklAECr1xWvGfYixArqLDA&s" 
+        alt="Green day" loading="lazy">
+        <div class="card-body">
+          <p class="card-meta">
+            Estadio Nacional . Lima <span class="tag">/ Música</span>
+          </p>
+          <h3 class="card-title">Green Day - American Idiot Tour</h3>
+          <p class="card-date">15 De junio 2026</p>
+          <!--genero-->
+            <p class="card-genre"></p>
+          <!--buton de registro de evento-->
+          <button class="btn-register" type="button">Registrarse</button>
+        </div>
+      </article>
+      <!--card 2-->
+      <article class="card" data-id="ev2" data-category="cumbia" data-artist="Grupo 5">
+        <img src="https://static.vaope.com/public/artists/138-GRUPO-5-BANNER-ARTISTA.jpg?w=1600" 
+        alt="Grupo 5" loading="lazy">
+        <div class="card-body">
+          <p class="card-meta">
+            Estadio Nacional . Lima <span class="tag">/ Música</span>
+          </p>
+          <h3 class="card-title">Grupo 5 - </h3>
+          <p class="card-date">20 de agosto de 2026</p>
+          <p class="card-genre"></p>
+          <button class="btn-register" type="button">Registrarse</button>
+
+        </div>
+        </article>
+        <!--card 3-->
+        <article class="card" data-id="ev3" data-category="rock" data-artist="Soda Stereo">
+        <img src="https://www.lanacion.com.py/resizer/v2/https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Flanacionpy%2FDKHPQ44SKFHCLI2BAQHDQMJ7JI.jpeg?auth=c69607ccfe04d5ba4e6fed90bfcb404bb31dd95c900fd87c953dbf19d5baddec&width=1000&smart=true" 
+        alt="Soda stereo" loading="lazy">
+        <div class="card-body">
+          <p class="card-meta">
+            Plaza San Martin . Lima <span class="tag">/ Música</span>
+          </p>
+          <h3 class="card-title">Tributo a Soda Stereo</h3>
+          <p class="card-date">18 de Marzo de 2026</p>
+          <p class="card-genre"></p>
+           <button class="btn-register" type="button">Registrarse</button>
+        </div>
+        </article>
+        <!--card 4-->
+        <article class="card" data-id="ev4" data-category="rock" data-artist="Luisa Fest">
+          <img src="https://vozdigital.home.blog/wp-content/uploads/2019/05/chaveport-1.jpg" 
+        alt="Soda stereo" loading="lazy">
+        <div class="card-body">
+          <p class="card-meta">
+            Anfiteatro Parque de la Exposición . Lima <span class="tag">Música</span>
+          </p>
+          <h3 class="card-title">Luisa Fest</h3>
+          <p class="card-date">20 de mayo de 2026</p>
+          <p class="card-genre"></p>
+          <button class="btn-register" type="button">Registrarse</button>
+        </div>
+        </article>
+          <!--card 5-->
+          <article class="card" data-id="ev5" data-category="rock" data-artist="Café Tacvba">
+          <img src="https://tvandshow.com/wp-content/uploads/2018/11/cafe-tacvba-auditorio-banamex-13-diciembre.jpg" 
+        alt="Café Tacvba" loading="lazy">
+        <div class="card-body">
+          <p class="card-meta">
+            Estadio Nacional . Lima <span class="tag">/ Música</span>
+          </p>
+          <h3 class="card-title">Café Tacvba</h3>
+          <p class="card-date">27 de Julio de 2026</p>
+          <p class="card-genre"></p>
+          <button class="btn-register" type="button">Registrarse</button>
+        </div>
+        </article>
+        <!--card 6-->
+          <article class="card" data-id="ev6" data-category="rock" data-artist="Los Fabulosos Cadillacs">
+          <img src="https://cdn.teleticket.com.pe/images/eventos/igu002v2_calugalistado.jpg" 
+        alt="Los fabulosos Cadillacs" loading="lazy">
+        <div class="card-body">
+          <p class="card-meta">
+            Estadio Nacional . Lima <span class="tag">/ Música</span>
+          </p>
+          <h3 class="card-title">Los fabulosos Cadillacs</h3>
+          <p class="card-date">31 de octubre de 2026</p>
+          <p class="card-genre"></p>
+          <button class="btn-register" type="button">Registrarse</button>
+        </div>
+        </article>
+      <!--card 7-->
+          <article class="card" data-id="ev7" data-category="rock"  data-artist="Hombres G">
+          <img src="https://cdn.teleticket.com.pe/especiales/hombres-g-lima-2026/images/logo-hg.png" 
+        alt="Los hombres G" loading="lazy">
+        <div class="card-body">
+          <p class="card-meta">
+            Estadio Nacional . Lima <span class="tag">/ Música</span>
+          </p>
+          <h3 class="card-title">Los hombres G</h3>
+          <p class="card-date">25 de octubre de 2026</p>
+          <p class="card-genre"></p>
+          <button class="btn-register" type="button">Registrarse</button>
+        </div>
+        </article>
+           <!--card 8-->
+          <article class="card" data-id="ev8" data-category="rock" data-artist="Hoobastank">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw__MGF-wDxXS13m_iYDzUFQohgLYPgTZrlw&s" 
+        alt="Hoobastank" loading="lazy">
+        <div class="card-body">
+          <p class="card-meta">
+            Estadio San Marcos . Lima <span class="tag">/ Música</span>
+          </p>
+          <h3 class="card-title">Hoobastank</h3>
+          <p class="card-date">28 de junio de 2026</p>
+          <p class="card-genre"></p>
+          <button class="btn-register" type="button">Registrarse</button>
+        </div>
+        </article>
+        <!--card 9-->
+        <article class="card" data-id="ev9" data-category="pop" data-artist="Sin bandera">
+          <img src="data:image/jpeg;base64,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" 
+        alt="Sin bandera" loading="lazy">
+        <div class="card-body">
+          <p class="card-meta">
+            Estadio Nacional . Lima <span class="tag">/ Música</span>
+          </p>
+          <h3 class="card-title">Sin bandera</h3>
+          <p class="card-date">28 de marzo de 2026</p>
+          <p class="card-genre"></p>
+          <button class="btn-register" type="button">Registrarse</button>
+        </div>
+        </article>
+        <!--card 10-->
+          <article class="card" data-id="ev10" data-category="all" data-artist="Anime">
+          <img src="https://i.postimg.cc/2j1VzNxq/hernan.png" 
+        alt="Anime" loading="lazy"> 
+        <div class="card-body">
+          <p class="card-meta">
+            Estadio Nacional . Lima <span class="tag">/ Música</span>
+          </p>
+          <h3 class="card-title">Clásicos del Anime - Hernan Jimenez</h3>
+          <p class="card-date">5 de septiembre de 2026</p>
+          <p class="card-genre  "></p>
+          <button class="btn-register" type="button">Registrarse</button>
+    </div>
+        </article>
+          <!--card 11-->
+          <article class="card" data-id="ev11" data-category="cumbia" data-artist="Armonia 10">
+          <img src="https://i.ytimg.com/vi/ybdsQXKtUEo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBTGRWyS4mld2jOLFJXogvklt4MoA" 
+        alt="Armonia 10" loading="lazy"> 
+        <div class="card-body">
+          <p class="card-meta">
+            Explanada Nacional . Lima <span class="tag">/ Música</span>
+          </p>
+          <h3 class="card-title">Clásicos de la Cumbia - Armonia 10</h3>
+          <p class="card-date">15 de Junio de 2026</p>
+          <p class="card-genre  "></p>
+          <button class="btn-register" type="button">Registrarse</button>
+    </div>
+        </article>
+
+          <!--card 12-->
+          <article class="card" data-id="ev12" data-category="pop" data-artist="Camila">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWRKEkt_5tHFq0-aZFt1i49NKgjcHAKdw2Kg&s" alt="Camila">
+        <div class="card-body">
+          <p class="card-meta">
+            Explanada Nacional . Lima <span class="tag">/ Música</span>
+          </p>
+          <h3 class="card-title">Camila</h3>
+          <p class="card-date">20 de  Junio de 2026</p>
+          <p class="card-genre  "></p>
+          <button class="btn-register" type="button">Registrarse</button>
+    </div>
+        </article>
+
+    </div>
+
+
+  </section>
+  <!--eventos-->
+  <section class="my-events" id="my-events" aria-label="Mis eventos registrados">
+  <h2>Mis eventos</h2>
+  <p class="my-events-sub">Se van a mostrar los eventos registrados.</p>
+
+  <ul class="my-events-list" id="myEventsList"> </ul>
+</section>
+  <!--footer-->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Conócenos</h4>
+        <ul>
+        <li><a href="#">Acerca de nosotros</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        </ul>
+      </div>
+          <div class="footer-column">
+      <h4>¡TRABAJEMOS JUNTOS!</h4>
+      <ul>
+        <li><a href="#">¿Tienes un evento?</a></li>
+        <li><a href="#">Venta empresas</a></li>
+        <li><a href="#">Módulo promotores</a></li>
+      </ul>
+    </div>
+    <!--redes-->
+     <div class="footer-column">
+      <h4>CONVERSEMOS</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+    </div>
+    <!--derechos de autor-->
+    <div class="footer-bottom">
+    <p>© 2026 Conciertos Top. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="galeria.js"></script>
+  <script src="evento.js"></script>
+
+
+
+    
+</body>
+</html>
